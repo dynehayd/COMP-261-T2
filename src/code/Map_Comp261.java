@@ -44,7 +44,7 @@ public class Map_Comp261 extends GUI {
                 Node node = new Node(nodeInformation[0],location);
                 nodeList.add(node);
             });
-
+    //yeah nah yeah
             br.close();
         } catch (IOException ignore) {
         }
