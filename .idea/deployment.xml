@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="https://github.com/dynehayd/COMP-261-T2.git" uploadOnCheckin="1fe23ca0-1cfe-4296-b8b3-da4ce970c5a6">
+    <serverData>
+      <paths name="https://github.com/dynehayd/COMP-261-T2.git">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myUploadOnCheckinName" value="https://github.com/dynehayd/COMP-261-T2.git" />
+  </component>
+</project>
