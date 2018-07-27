@@ -54,8 +54,8 @@ public class Location {
 	 * required. Note the vertical direction is inverted
 	 */
 	public Point asPoint(Location origin, double scale) {
-		int u = (int) ((x - CENTRE_LAT/*origin.x*/) * scale);
-		int v = (int) ((/*origin.y*/CENTRE_LON - y) * scale);
+		int u = (int) ((x - origin.x) * scale);
+		int v = (int) ((origin.y - y) * scale);
 		return new Point(u, v);
 	}
 

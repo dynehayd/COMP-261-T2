@@ -1,5 +1,7 @@
 package code;
 
+import javafx.scene.input.MouseDragEvent;
+
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -66,6 +68,11 @@ public abstract class GUI {
 	 */
 	protected abstract void onClick(MouseEvent e);
 
+
+	protected abstract void onMouseDrag(MouseEvent e);
+
+
+	protected abstract void onMouseWheel(MouseWheelEvent e);
 	/**
 	 * Is called whenever the search box is updated. Use getSearchBox to get the
 	 * JTextField object that is the search box itself.
@@ -383,8 +390,18 @@ public abstract class GUI {
 			}
 		});
 
+		drawing.addMouseMotionListener(new MouseAdapter() {
+			@Override
+			public void mouseDragged(MouseEvent e) {
+				onMouseDrag(e);
+				redraw();
+			}
+		});
+
+
 		drawing.addMouseWheelListener(new MouseAdapter() {
 			public void mouseWheelMoved(MouseWheelEvent e) {
+				onMouseWheel(e);
 			}
 		});
 
